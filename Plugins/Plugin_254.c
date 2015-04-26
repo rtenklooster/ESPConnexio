@@ -38,10 +38,10 @@ boolean Plugin_254(byte function, struct NodoEventStruct *event, char *string)
       Wire.requestFrom(BH1750_ADDRESS, 2);
       byte b1 = Wire.read();
       byte b2 = Wire.read();
-      float val=0;     
+      unsigned int val=0;
       val=((b1<<8)|b2)/1.2;
       val=val+15;
-      UserVar[event->Par1 -1] = val;
+      UserVar[event->Par1 -1] = (float)val;
       success=true;
       break;
     }
