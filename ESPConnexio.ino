@@ -48,7 +48,8 @@
 //   VariableMultiply <var>,<factor>
 //   VariableAddVariable <var>,<var>
 
-#define SKETCH_PATH S:\Software\ESP\source\ESPConnexio R006\ESPConnexio
+//#define SKETCH_PATH S:\Software\ESP\source\ESPConnexio R006\ESPConnexio
+#define SKETCH_PATH /users/Richard/Downloads/ESPConnexio
 //#define CONFIG_FILE Config_01.c
 
 // ESP-01 only has 2 pins. Select according to specific needs:
